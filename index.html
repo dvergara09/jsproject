@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="main.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Kaushan+Script" rel="stylesheet">
+
+  <title>Login</title>
 </head>
 <body>
   <h2>Primero que todo, inicia sesion</h2>
 
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
 
-  <div id="id01" class="modal">
+  <div id="login" class="modal">
 
     <form class="modal-content animate">
       <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
         <img src="img/9.png" alt="Avatar" class="avatar">
       </div>
 
@@ -28,7 +30,7 @@
         <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
 
-        <input type="button" value="Login" id="submit" onclick="validate()"/>
+        <input type="button" value="Login" id="submit" onclick="validarlogin()"/>
       </div>
 
 
@@ -36,9 +38,9 @@
   </div>
   <br>
   <span>
-    <b>Note: </b>username and password. <br/>
-    <b>User Name: </b>Formget<br/>
-    <b>Password : </b>formget#123
+    <b>Nota: Para fines practicos se pondrá un username y password por defecto</b><br>
+    <b>User Name: </b>Dvergara9<br/>
+    <b>Password : </b>web2018
   </span>
 
 
