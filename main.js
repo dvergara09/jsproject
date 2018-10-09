@@ -1,6 +1,6 @@
 
 /**funcion modal login**/
-var modal = document.getElementById('id01');
+var modal = document.getElementById('login');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -11,10 +11,10 @@ window.onclick = function(event) {
 var intentos = 3;
 // Cantidad de intentoss.
 // Funcion que hace la validacion del formulario
-function validate(){
+function validarlogin(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if ( username == "Formget" && password == "formget#123"){
+  if ( username == "Dvergara9" && password == "web2018"){
     alert ("Login successfully");
       window.location = "home.html"; // Me envia a otra pestaña
       return false;
@@ -59,4 +59,14 @@ function imagenesAleatorias() {
   }
   document.write("</tr></table>");
   document.write("<br><center><a href='javascript:history.go(-1)' >Atras</a> </center>");;
+}
+
+
+window.onscroll = function() {barraProgreso()};
+
+function barraProgreso() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progreso").style.width = scrolled + "%";
 }
