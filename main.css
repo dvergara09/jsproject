@@ -6,11 +6,20 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFF8;
+  text-align: center;
 }
-
+h2{
+  font-family: 'Kaushan Script', cursive;
+  text-transform: uppercase;
+}
+p, span, input, button, a{
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+}
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #0F1E32;
 }
 
 .topnav a{
@@ -29,7 +38,7 @@ body {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #013859;
   color: white;
 }
 
@@ -60,7 +69,6 @@ body {
 }
 
 /**Estilos login**/
-/* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -70,9 +78,8 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button, input[type=button] {
-    background-color: #4CAF50;
+    background-color: #21BEDA;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -85,14 +92,6 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -108,32 +107,25 @@ img.avatar {
     padding: 16px;
 }
 
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
+/* Estilos del modal login */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
-
-/* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
 
 /* The Close Button (x) */
@@ -148,7 +140,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: #EB3E4A;
     cursor: pointer;
 }
 
@@ -179,6 +171,27 @@ span.psw {
     }
 }
 
+/**Progress**/
+.header{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+.progress-container{
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  top: 43px;
+}
+.progress-bar {
+  height: 8px;
+  background: #21BEDA;
+  width: 0%;
+  margin-bottom: -2px;
+
+}
 /**Imagenes**/
 .contimg {
   position: relative;
@@ -195,7 +208,7 @@ span.psw {
   bottom: 0;
   left: 100%;
   right: 0;
-  background-color: rgb(99, 178, 230);
+  background-color: #013859;
   overflow: hidden;
   width: 0;
   height: 100%;
